@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Navbar/Navbar.scss";
-import { IoLogoSlack, IoIosCart } from "react-icons/io";
+import { IoLogoSlack, IoCart } from "react-icons/io5";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { Link as ContactLink, useLocation } from "react-router-dom";
