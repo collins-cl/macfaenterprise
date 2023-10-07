@@ -43,7 +43,7 @@
 
         p {
           font-size: 1.3em;
-          color: black;
+          color: white;
 
           span {
             font-size: 0.8em;
@@ -52,21 +52,27 @@
       }
 
       .links-desktop {
-        display: flex;
-        align-items: center;
-        gap: 2.5em;
-        text-transform: uppercase;
-        font-size: 13px;
-
         .mobile-logo-itm {
           display: none;
         }
 
-        a {
-          color: black;
-          cursor: pointer;
+        .links {
+          display: flex;
+          align-items: center;
+          gap: 2.5em;
+          text-transform: uppercase;
+          font-size: 13px;
+          a {
+            color: white;
+            cursor: pointer;
+          }
         }
       }
+    }
+
+    .links-mobile,
+    .close-icon {
+      display: none;
     }
 
     .cart-quote {
@@ -137,10 +143,6 @@
       position: unset;
 
       &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 0px;
         display: none;
       }
       .left-side {
@@ -150,6 +152,7 @@
         .hamburger {
           display: block;
           font-size: 1.2em;
+          color: white;
         }
 
         .logo {
@@ -186,12 +189,15 @@
           background-color: white;
           z-index: 1;
           padding: 2em;
+          animation: slideInNav 0.2s linear;
+          display: block;
 
           .mobile-logo-itm {
             display: flex;
             align-items: center;
             gap: 0.3em;
             margin-top: 3em;
+            animation: fadeIn 0.4s linear;
 
             .icon {
               font-size: 2.2em;
@@ -214,6 +220,7 @@
             right: 10%;
             top: 3%;
             font-size: 1.5em;
+            display: block;
           }
 
           .links {
@@ -224,20 +231,21 @@
             margin-top: 3em;
 
             a {
-              font-size: 19px;
+              font-size: 17px;
+              letter-spacing: 1px;
               font-weight: bold;
 
               &:nth-child(1) {
                 animation: slideIn 0.2s linear;
               }
               &:nth-child(2) {
-                animation: slideIn 0.2s linear;
+                animation: slideIn 0.4s linear;
               }
               &:nth-child(3) {
-                animation:slideIn 0.2s linear;
+                animation: slideIn 0.6s linear;
               }
               &:nth-child(4) {
-                animation: slideIn 0.2s linear;
+                animation: slideIn 0.8s linear;
               }
             }
           }
@@ -251,6 +259,26 @@
         }
       }
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInNav {
+  0% {
+    transform: translateX(-10em);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
 
