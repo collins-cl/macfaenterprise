@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../Navbar/Navbar.scss";
 import { IoLogoSlack, IoCart } from "react-icons/io5";
 import { FaBars, FaTimes } from "react-icons/fa";
+import {LiaTimesSolid} from "react-icons/lia"
 import { Link } from "react-scroll";
 import { Link as ContactLink, useLocation } from "react-router-dom";
 
@@ -37,7 +38,7 @@ const Navbar = () => {
               <Link smooth={true}>FAQs</Link>
             </div>
 
-            <FaTimes className="close-icon" onClick={() => setOpen(false)} />
+            <LiaTimesSolid className="close-icon" onClick={() => setOpen(false)} />
           </div>
         </div>
 
