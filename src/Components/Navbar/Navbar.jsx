@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="cart-quote">
           {location.pathname === "/products" ? (
             <div className="cart">
-              <IoIosCart className="icon" />
+              <IoCart className="icon" />
             </div>
           ) : null}
 
