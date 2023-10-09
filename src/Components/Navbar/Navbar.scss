@@ -254,8 +254,9 @@
 
       .cart-quote {
         .get-quote {
-          height: 30px;
-          width: 5.5em;
+          height: 35px;
+          width: fit-content;
+          padding: 5px 1em;
         }
       }
     }

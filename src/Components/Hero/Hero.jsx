@@ -13,7 +13,8 @@ const Hero = () => {
             <div className="intro">Get more than a reliable power plant</div>
 
             <div className="main">
-              Empowering a Sustainable Future with Green Energy Solutions
+              Empowering a Sustainable Future with{" "}
+              <span>Green Energy Solutions</span>
             </div>
 
             <div className="c-t-a">
