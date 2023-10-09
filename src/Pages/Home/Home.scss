@@ -7,6 +7,85 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .about {
+    width: 85%;
+    margin: auto;
+    margin-top: 7em;
+    display: flex;
+    align-items: center;
+
+    .left {
+      width: 50%;
+
+      .head {
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 1px;
+        position: relative;
+        margin-left: 5em;
+
+        &::before {
+          content: "";
+          width: 3.5em;
+          height: 1px;
+          background-color: black;
+          position: absolute;
+          top: 10px;
+          left: -4em;
+        }
+      }
+
+      h2 {
+        text-transform: capitalize;
+        margin-top: 10px;
+        letter-spacing: 1px;
+      }
+
+      .brief-info {
+        margin-top: 10px;
+        font-size: 14px;
+        width: 80%;
+
+        p {
+          margin-top: 10px;
+
+          span {
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .right-imgs {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      position: relative;
+
+      .date {
+        position: absolute;
+        right: 38%;
+        background-color: #f9964b;
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        line-height: 1.1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-transform: uppercase;
+
+        span {
+          font-size: 2em;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -17,7 +96,71 @@
       height: fit-content;
       background-repeat: no-repeat;
       background-size: cover;
-      padding:0 0 4em 0;
+      padding: 0 0 4em 0;
+    }
+
+    .about {
+      width: 90%;
+      margin: auto;
+      margin-top: 7em;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 2em;
+
+      .left {
+        width: 100%;
+        margin-top: 1em;
+
+        .head {
+          margin-left: 0;
+          text-align: center;
+
+          &::before {
+            position: absolute;
+            top: 10px;
+            left: 2.3em;
+          }
+        }
+
+       
+
+        .brief-info {
+          margin-top: 10px;
+          font-size: 14px;
+          width: 100%;
+
+          p {
+            margin-top: 10px;
+
+            span {
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+      .right-imgs {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+        position: relative;
+
+        img {
+          width: 100%;
+        }
+
+        .date {
+          position: absolute;
+          bottom: 45%;
+          right: 30%;
+          background-color: #f9964b;
+          height: 120px;
+          width: 120px;
+        }
+      }
     }
   }
 }

@@ -118,7 +118,7 @@
         justify-content: center;
         align-items: center;
         border: none;
-        border-radius: 5px;
+        border-radius: 3px;
         cursor: pointer;
 
         &:hover {
@@ -193,7 +193,7 @@
           bottom: 0;
           width: 100vw;
           height: 100vh;
-          backdrop-filter: blur(10px);
+          background-color: white;
           z-index: 1;
           padding: 2em;
           animation: slideInNav 0.2s linear;
@@ -213,7 +213,7 @@
 
             p {
               font-size: 1.4em;
-              color: white;
+              color: black;
               font-weight: bold;
 
               span {
@@ -228,7 +228,7 @@
             top: 3%;
             font-size: 1.8em;
             display: block;
-            fill: white;
+            fill: black;
           }
 
           .links {
@@ -242,7 +242,7 @@
               font-size: 17px;
               letter-spacing: 2px;
               font-weight: bold;
-              color: white;
+              color: black;
 
               &:nth-child(1) {
                 animation: slideIn 0.2s linear;
