@@ -198,24 +198,21 @@
           padding: 2em;
           animation: slideInNav 0.2s linear;
           display: block;
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          flex-direction: column;
 
           .mobile-logo-itm {
             display: flex;
             align-items: center;
             gap: 0.3em;
+            margin-top: 3em;
             animation: fadeIn 0.4s linear;
 
             .icon {
-              font-size: 2.5em;
+              font-size: 2.2em;
               fill: #fb8445;
             }
 
             p {
-              font-size: 2.2em;
+              font-size: 1.4em;
               color: white;
               font-weight: bold;
 
@@ -231,7 +228,6 @@
             top: 3%;
             font-size: 1.5em;
             display: block;
-            fill: white;
           }
 
           .links {
@@ -242,9 +238,9 @@
             margin-top: 3em;
 
             a {
-              font-size: 1.8em;
+              font-size: 17px;
               letter-spacing: 2px;
-              font-weight: normal;
+              font-weight: bold;
               color: white;
 
               &:nth-child(1) {
