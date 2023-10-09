@@ -44,6 +44,7 @@
         p {
           font-size: 1.3em;
           color: white;
+          font-weight: bold;
 
           span {
             font-size: 0.8em;
@@ -64,7 +65,13 @@
           font-size: 13px;
           a {
             color: white;
+            font-weight: bold;
             cursor: pointer;
+
+            &:hover{
+              color: #fb8445;
+              transition: .3s;
+            }
           }
         }
       }
@@ -186,27 +193,30 @@
           bottom: 0;
           width: 100vw;
           height: 100vh;
-          background-color: white;
+          backdrop-filter: blur(10px);
           z-index: 1;
           padding: 2em;
           animation: slideInNav 0.2s linear;
           display: block;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
 
           .mobile-logo-itm {
             display: flex;
             align-items: center;
             gap: 0.3em;
-            margin-top: 3em;
             animation: fadeIn 0.4s linear;
 
             .icon {
-              font-size: 2.2em;
+              font-size: 2.5em;
               fill: #fb8445;
             }
 
             p {
-              font-size: 1.4em;
-              color: black;
+              font-size: 2.2em;
+              color: white;
               font-weight: bold;
 
               span {
@@ -221,6 +231,7 @@
             top: 3%;
             font-size: 1.5em;
             display: block;
+            fill: white;
           }
 
           .links {
@@ -231,9 +242,10 @@
             margin-top: 3em;
 
             a {
-              font-size: 17px;
-              letter-spacing: 1px;
-              font-weight: bold;
+              font-size: 1.8em;
+              letter-spacing: 2px;
+              font-weight: normal;
+              color: white;
 
               &:nth-child(1) {
                 animation: slideIn 0.2s linear;

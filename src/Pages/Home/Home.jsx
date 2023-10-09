@@ -1,10 +1,28 @@
 import React from "react";
-import Hero from "../../Components/Hero/Hero";
+import "../Home/Home.scss";
+import Navbar from "../../Components/Navbar/Navbar";
 
 const Home = () => {
   return (
-    <div>
-      <Hero />
+    <div className="home">
+      <div className="hero">
+        <Navbar />
+        
+      </div>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
+      <p>scsc</p>
     </div>
   );
 };
