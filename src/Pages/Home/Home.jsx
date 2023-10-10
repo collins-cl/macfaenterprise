@@ -5,6 +5,8 @@ import Hero from "../../Components/Hero/Hero";
 import cat2 from "../../assets/cat2.jpg";
 import man1 from "../../assets/man1.jpg";
 import Quality from "../../Components/Quality/Quality";
+import Products from "../../Components/Products/Products";
+import Services from "../../Components/Services/Services";
 
 const Home = () => {
   return (
@@ -63,6 +65,10 @@ const Home = () => {
       </div>
 
       <Quality />
+
+      <Services />
+
+      <Products />
       <p>scsc</p>
       <p>scsc</p>
       <p>scsc</p>
