@@ -2,9 +2,9 @@ import React from "react";
 import "../Home/Home.scss";
 import Navbar from "../../Components/Navbar/Navbar";
 import Hero from "../../Components/Hero/Hero";
-import cat1 from "../../assets/cat1.jpeg";
 import cat2 from "../../assets/cat2.jpg";
 import man1 from "../../assets/man1.jpg";
+import Quality from "../../Components/Quality/Quality";
 
 const Home = () => {
   return (
@@ -46,10 +46,10 @@ const Home = () => {
               width={300}
               alt="an engineer of macfa generator services"
             />
-          </div>
 
-          <div className="date">
-            since <span>2007</span>
+            <div className="date">
+              since <span>2007</span>
+            </div>
           </div>
 
           <div className="pic2">
@@ -61,6 +61,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <Quality />
       <p>scsc</p>
       <p>scsc</p>
       <p>scsc</p>
