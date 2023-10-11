@@ -8,12 +8,25 @@
       font-size: 1.4em;
       font-weight: bold;
       text-transform: uppercase;
+      position: relative;
+      width: fit-content;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8em;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -4px;
+        background-color: #f9964b;
+      }
     }
 
     h3 {
       font-size: 14px;
       font-weight: lighter;
-      margin-top: 1em;
+      margin-top: 2em;
       max-width: 70%;
     }
 
@@ -156,6 +169,25 @@
             font-size: 1em;
           }
         }
+      }
+
+      .inquire-more {
+        margin-top: 3em;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .products {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 7em;
+
+    .wrapper {
+      h3 {
+        max-width: 100%;
       }
 
       .inquire-more {

@@ -1,0 +1,83 @@
+.faq {
+  max-width: 85%;
+  margin: auto;
+  margin-top: 7em;
+
+  .wrapper {
+    .title {
+      font-size: 1.1em;
+      font-weight: bold;
+      position: relative;
+      width: fit-content;
+      text-transform: uppercase;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 6em;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -4px;
+        background-color: #f9964b;
+      }
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-size: 1.8em;
+      font-weight: normal;
+    }
+
+    h3 {
+      font-size: 14px;
+      font-weight: lighter;
+    }
+
+    .accordion {
+      max-width: 60%;
+      margin-top: 2em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 7em;
+
+    .wrapper {
+      h2 {
+        margin-top: 14px;
+        font-size: 1.7em;
+      }
+
+      .accordion {
+        max-width: 100%;
+        margin-top: 2em;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .faq {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 9em;
+
+    .wrapper {
+      h2 {
+        margin-top: 14px;
+        font-size: 1.7em;
+      }
+
+      .accordion {
+        max-width: 100%;
+        margin-top: 2em;
+      }
+    }
+  }
+}

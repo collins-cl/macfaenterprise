@@ -1,0 +1,13 @@
+.accordiondetails {
+  font-size: 13px;
+}
+
+.accordionsummary {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.accordionbody {
+  margin-top: 5px;
+}

@@ -26,10 +26,10 @@ const Footer = () => {
           <p>Company</p>
 
           <div className="links">
-            <Link>About</Link>
-            <Link>Product</Link>
-            <Link>Misson</Link>
-            <Link>FAQs</Link>
+            <Link to="about" smooth={true}>About</Link>
+            <Link to="products" smooth={true}>Product</Link>
+            <Link to="services" smooth={true}>Service</Link>
+            <Link to="faq" smooth={true}>FAQs</Link>
           </div>
         </div>
 

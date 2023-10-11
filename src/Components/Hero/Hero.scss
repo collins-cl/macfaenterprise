@@ -41,6 +41,10 @@
         position: relative;
         border-radius: 5px;
 
+        a {
+          color: white;
+        }
+
         &:hover {
           background-color: #fb8445;
           border: none;
@@ -139,6 +143,19 @@
 
       .bottom-contents {
         display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-container {
+    .wrapper {
+      .middle-contents {
+        max-width: 95%;
+        margin: auto;
+        margin-top: 5em;
+        position: relative;
       }
     }
   }

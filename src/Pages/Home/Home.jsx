@@ -9,6 +9,7 @@ import Products from "../../Components/Products/Products";
 import Services from "../../Components/Services/Services";
 import WhyUs from "../../Components/WhyUs/WhyUs";
 import Footer from "../../Components/Footer/Footer";
+import Faq from "../../Components/FAQs/Faq";
 
 const Home = () => {
   return (
@@ -73,6 +74,8 @@ const Home = () => {
       <Products />
 
       <WhyUs />
+
+      <Faq />
 
       <div className="wrap">
         Well, that's a wrap!. Feel free to reach out to us on all our social

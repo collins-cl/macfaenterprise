@@ -9,12 +9,26 @@
       text-align: center;
       text-transform: uppercase;
       font-size: 15px;
+      position: relative;
+      width: fit-content;
+      margin: auto;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4em;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -4px;
+        background-color: #f9964b;
+      }
     }
 
     h4 {
       width: 70%;
       margin: auto;
-      margin-top: 0.5em;
+      margin-top: 1em;
       line-height: 1.1;
       font-size: 1.7em;
       font-weight: normal;
@@ -59,6 +73,7 @@
       h3 {
         font-weight: lighter;
         text-align: left;
+        width: 100%;
       }
 
       h4 {
@@ -80,9 +95,10 @@
           width: 100%;
           height: fit-content;
           padding: 1em;
-          border-top: 4px solid #f9964b;
+          border-top: none;
+          border-left: 4px solid #f9964b;
 
-          img{
+          img {
             width: 40px;
           }
 
@@ -97,6 +113,37 @@
             font-size: 14px;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .services {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 8em;
+
+    .wrapper {
+      h3 {
+        text-align: left;
+        width: 100%;
+        margin: none;
+      }
+
+      h4 {
+        width: 100%;
+        margin: none;
+        text-align: left;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2em;
+        width: 100%;
+        margin-top: 4em;
       }
     }
   }

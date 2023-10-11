@@ -3,7 +3,6 @@ import "../Services/Services.scss";
 import one from "../../assets/01.png";
 import two from "../../assets/02.png";
 import three from "../../assets/03.png";
-import four from "../../assets/04.png";
 
 const Services = () => {
   return (

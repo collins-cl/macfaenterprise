@@ -1,8 +1,8 @@
 import React from "react";
 import "../Hero/Hero.scss";
 import HeroImage from "../../assets/heroimg.jpg";
-import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -15,7 +15,11 @@ const Hero = () => {
             Empowering a Sustainable Future with, MacFa Nigeria Enterprise
           </div>
 
-          <div className="c-t-a">See our products</div>
+          <div className="c-t-a">
+            <Link to="products" smooth={true} offset={-50}>
+              See our products
+            </Link>
+          </div>
         </div>
 
         <div className="bottom-contents">
