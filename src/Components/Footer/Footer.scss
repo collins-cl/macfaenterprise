@@ -132,3 +132,53 @@
     }
   }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    margin-top: 5em;
+    padding: 2em 1em;
+
+    .wrapper {
+      display: flex;
+      gap: 2em;
+
+      .logo {
+        width: 40%;
+
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .company,
+      .conditions {
+        p {
+          text-transform: uppercase;
+        }
+        .links,
+        .f-links {
+          margin-top: 1em;
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+        }
+      }
+
+      .get-in {
+        p {
+          text-transform: uppercase;
+        }
+        .loc {
+          margin-top: 1em;
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+
+          p {
+            text-transform: lowercase;
+          }
+        }
+      }
+    }
+  }
+}
