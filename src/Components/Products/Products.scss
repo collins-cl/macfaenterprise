@@ -1,0 +1,167 @@
+.products {
+  max-width: 85%;
+  margin: auto;
+  margin-top: 7em;
+
+  .wrapper {
+    .title {
+      font-size: 1.4em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 14px;
+      font-weight: lighter;
+      margin-top: 1em;
+      max-width: 70%;
+    }
+
+    .container {
+      margin-top: 2em;
+      display: flex;
+      justify-content: space-between;
+      gap: 2em;
+      flex-wrap: wrap;
+
+      .box {
+        width: 550px;
+        padding: 2em;
+        border: 1px solid lightgray;
+
+        .head {
+          font-size: 1.2em;
+          text-transform: uppercase;
+          font-weight: lighter;
+        }
+
+        .power-rating {
+          margin-top: 10px;
+        }
+
+        img {
+          margin-top: 10px;
+        }
+
+        .type {
+          margin-top: 10px;
+          text-transform: uppercase;
+          font-size: 1.1em;
+
+          span {
+            font-weight: bold;
+          }
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .get-quote {
+          height: 50px;
+          width: 100%;
+          margin: auto;
+          margin-top: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-transform: uppercase;
+          font-size: 1.1em;
+          color: black;
+          font-weight: bold;
+          background-color: #fd730a;
+
+          &:hover {
+            background-color: black;
+            color: white;
+            transition: all 0.3s;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+
+    .inquire-more {
+      margin-top: 3em;
+      width: 40%;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .products {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 5em;
+    .wrapper {
+      .title {
+        font-size: 1.1em;
+      }
+
+      h3 {
+        font-size: 14px;
+        max-width: 100%;
+      }
+
+      .container {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2em;
+        flex-wrap: wrap;
+
+        .box {
+          width: 100%;
+          padding: 1em;
+
+          .head {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: lighter;
+          }
+
+          .power-rating {
+            margin-top: 10px;
+          }
+
+          img {
+            margin-top: 10px;
+            width: 70%;
+          }
+
+          .type {
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-size: 1.1em;
+
+            span {
+              font-weight: bold;
+            }
+          }
+
+          p {
+            font-size: 14px;
+          }
+
+          .get-quote {
+            height: 45px;
+            width: 100%;
+            margin: auto;
+            margin-top: 10px;
+            font-size: 1em;
+          }
+        }
+      }
+
+      .inquire-more {
+        margin-top: 3em;
+        width: 100%;
+      }
+    }
+  }
+}
