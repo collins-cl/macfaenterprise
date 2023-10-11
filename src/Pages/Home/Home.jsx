@@ -7,6 +7,7 @@ import man1 from "../../assets/man1.jpg";
 import Quality from "../../Components/Quality/Quality";
 import Products from "../../Components/Products/Products";
 import Services from "../../Components/Services/Services";
+import WhyUs from "../../Components/WhyUs/WhyUs";
 
 const Home = () => {
   return (
@@ -69,6 +70,8 @@ const Home = () => {
       <Services />
 
       <Products />
+
+      <WhyUs />
       <p>scsc</p>
       <p>scsc</p>
       <p>scsc</p>
