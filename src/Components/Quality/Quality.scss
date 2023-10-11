@@ -9,6 +9,20 @@
       font-weight: lighter;
       text-transform: uppercase;
       font-size: 15px;
+      max-width: fit-content;
+      margin: auto;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4em;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -4px;
+        background-color: #f9964b;
+      }
     }
 
     h2 {
@@ -16,6 +30,7 @@
       text-transform: capitalize;
       font-size: 2.2em;
       font-weight: lighter;
+      margin-top: 10px;
 
       span {
         font-weight: bold;
@@ -97,13 +112,15 @@
 
     .wrapper {
       h3 {
+        max-width: 100%;
+        margin: none;
         text-align: left;
       }
 
       h2 {
         text-align: left;
         line-height: 1.1;
-        margin-top: 10px;
+        margin-top: 1em;
       }
 
       .container {

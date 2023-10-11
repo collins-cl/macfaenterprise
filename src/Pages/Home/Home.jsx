@@ -8,6 +8,7 @@ import Quality from "../../Components/Quality/Quality";
 import Products from "../../Components/Products/Products";
 import Services from "../../Components/Services/Services";
 import WhyUs from "../../Components/WhyUs/WhyUs";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -72,20 +73,18 @@ const Home = () => {
       <Products />
 
       <WhyUs />
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
-      <p>scsc</p>
+
+      <div className="wrap">
+        Well, that's a wrap!. Feel free to reach out to us on all our social
+        platforms, relating to issues you've faced or enquiries. We are ever
+        ready to get back to you and offer our services.
+        <p>
+          <span> MacFa Nigeria Enterprise</span> got you covered for all
+          electrical equipments and manual services collectively.
+        </p>
+      </div>
+
+      <Footer />
     </div>
   );
 };

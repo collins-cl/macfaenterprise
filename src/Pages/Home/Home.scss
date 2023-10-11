@@ -91,6 +91,20 @@
       }
     }
   }
+
+  .wrap {
+    max-width: 85%;
+    margin: auto;
+    margin-top: 3em;
+
+    p {
+      margin-top: 0.7em;
+      width: 40%;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -160,7 +174,7 @@
 
           .date {
             position: absolute;
-            right:35%;
+            right: 35%;
             top: 90%;
             background-color: #f9964b;
             height: 120px;
@@ -179,6 +193,20 @@
               font-weight: bold;
             }
           }
+        }
+      }
+    }
+
+    .wrap {
+      max-width: 90%;
+      margin: auto;
+      margin-top: 3em;
+
+      p {
+        margin-top: 0.7em;
+        width: 100%;
+        span {
+          font-weight: bold;
         }
       }
     }
