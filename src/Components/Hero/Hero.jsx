@@ -1,6 +1,5 @@
 import React from "react";
 import "../Hero/Hero.scss";
-import HeroImage from "../../assets/heroimg.jpg";
 import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-scroll";
 

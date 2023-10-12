@@ -10,6 +10,7 @@ import Services from "../../Components/Services/Services";
 import WhyUs from "../../Components/WhyUs/WhyUs";
 import Footer from "../../Components/Footer/Footer";
 import Faq from "../../Components/FAQs/Faq";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -46,7 +47,11 @@ const Home = () => {
 
         <div className="right-imgs">
           <div className="pic1">
-            <img
+            <motion.img
+              initial={{ opacity: 0, y: 150 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.8 }}
               src={man1}
               width={300}
               alt="an engineer of macfa generator services"
@@ -58,7 +63,11 @@ const Home = () => {
           </div>
 
           <div className="pic2">
-            <img
+            <motion.img
+              initial={{ opacity: 0, y: 200 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 1.2 }}
               src={cat2}
               width={300}
               alt="a generator that macfa services offer"

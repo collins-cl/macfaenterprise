@@ -10,6 +10,18 @@ const Navbar = () => {
   const location = useLocation();
   const [open, setOpen] = useState(false);
 
+  const handleQoute = () => {
+    let number = +2348060015910;
+    let message =
+      "Hi, i would love to know the quote for your available products sir, kindly say which is available";
+
+    let url = `https://web.whatsapp.com/send?phone=${number}`;
+
+    url += `&text=${message}&app_absent=0`;
+
+    window.open(url);
+  };
+
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -81,7 +93,7 @@ const Navbar = () => {
           ) : null}
 
           <div className="get-quote">
-            <ContactLink>Get A Quote</ContactLink>
+            <ContactLink onClick={handleQoute}>Get A Quote</ContactLink>
           </div>
         </div>
       </div>

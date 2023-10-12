@@ -1,14 +1,29 @@
 import React from "react";
 import "../WhyUs/WhyUs.scss";
 import banner from "../../assets/cat1.jpeg";
+import { motion } from "framer-motion";
 
 const WhyUs = () => {
   return (
     <div className="whyus">
       <div className="wrapper">
         <div className="img">
-          <div className="border"></div>
-          <img src={banner} width={380} alt="" />
+          <motion.div
+            initial={{ y: 200, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4, duration: 0.3 }}
+            className="border"
+          ></motion.div>
+          <motion.img
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.8, duration: 0.7 }}
+            src={banner}
+            width={380}
+            alt=""
+          />
         </div>
 
         <div className="container">
