@@ -160,3 +160,16 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    .wrapper {
+      .middle-contents {
+        max-width: 80%;
+        margin: auto;
+        margin-top: 5em;
+        position: relative;
+      }
+    }
+  }
+}
