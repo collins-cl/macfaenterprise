@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Navbar/Navbar.scss";
 import { IoLogoSlack, IoCart } from "react-icons/io5";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { LiaTimesSolid } from "react-icons/lia";
 import { Link } from "react-scroll";
 import { Link as ContactLink, useLocation } from "react-router-dom";
@@ -15,11 +15,9 @@ const Navbar = () => {
     let message =
       "Hi, i would love to know the quote for your available products sir, kindly say which is available";
 
-    let url = `https://web.whatsapp.com/send?phone=${number}`;
+    let url = `https://wa.me/${number}?text=${encodeURI(message)}&app_absent=0`;
 
-    url += `&text=${message}&app_absent=0`;
-
-    window.open(url);
+    window.open(url).focus();
   };
 
   return (

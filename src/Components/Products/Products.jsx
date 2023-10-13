@@ -1,31 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../Products/Products.scss";
 import productImage from "../../assets/cat1.jpeg";
 import { productsDummy } from "../productsdummy";
 
 const Products = () => {
   const data = productsDummy;
-  const [itemclicked, setItem] = useState("");
-  const [type, setType] = useState("");
 
   const handleQoute = (item) => {
-    setItem(item.Type);
-    setType(item.itemType);
+    try {
+      let number = +2348060015910;
+      let message = `Hi, I would love to know the quote for ${item.itemType} ${item.Type}  sir, I got redirected from your website`;
+
+      let url = `https://wa.me/${number}?text=${encodeURI(
+        message
+      )}&app_absent=0`;
+      window.open(url).focus();
+    } catch (error) {
+      console.log(error);
+    }
   };
-
-  useEffect(() => {
-    console.log(itemclicked);
-    console.log(type);
-
-    let number = +2348060015910;
-    let message = `Hi, i would love to know the quote for ${type} ${itemclicked}  sir, I got redirected from your website`;
-
-    let url = `https://web.whatsapp.com/send?phone=${number}`;
-
-    url += `&text=${encodeURI(message)}&app_absent=0`;
-
-    window.open(url);
-  }, [handleQoute]);
 
   return (
     <div className="products">
